@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>সাইফুল'স ডেন্টাল কেয়ার | প্রফেসর সাইফুল ইসলাম | মিরপুর-১০, ঢাকা</title>
+    <meta name="description" content="প্রফেসর ডা. সাইফুল ইসলাম, MS, MPH, BCS, BDS — ঢাকা মেডিকেল কলেজ হাসপাতাল। সাইফুল'স ডেন্টাল কেয়ার, মিরপুর-১০, সেনপাড়া পার্বত। বিকাল ৫:৩০ - রাত ৯:০০। অ্যাপয়েন্টমেন্ট: ০১৮১৯-২৯০৩৫৪">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0B1E3F;
+            --navy-deep: #07152B;
+            --navy-light: #152B4D;
+            --ivory: #FDFCFA;
+            --cream: #F5F0E8;
+            --warm-white: #FAF8F5;
+            --gold: #C9A96E;
+            --gold-light: #D4B87A;
+            --gold-dark: #A08040;
+            --teal: #1B6B6B;
+            --teal-light: #2A8A8A;
+            --text-dark: #0B1E3F;
+            --text-body: #334155;
+            --text-muted: #64748B;
+            --text-light: #94A3B8;
+            --border: #E8E0D5;
+            --border-light: #F0EBE3;
+            --shadow-sm: 0 2px 8px rgba(11, 30, 63, 0.06);
+            --shadow-md: 0 8px 24px rgba(11, 30, 63, 0.08);
+            --shadow-lg: 0 16px 48px rgba(11, 30, 63, 0.12);
+            --radius: 8px;
+            --radius-lg: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Bengali', -apple-system, sans-serif;
+            color: var(--text-body);
+            background: var(--ivory);
+            line-height: 1.7;
+            font-weight: 400;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', 'Noto Sans Bengali', Georgia, serif;
+            color: var(--text-dark);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        .bn { font-family: 'Noto Sans Bengali', sans-serif; }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--navy-deep);
+            color: var(--ivory);
+            padding: 0.5rem 0;
+            font-size: 0.8rem;
+            position: relative;
+            z-index: 1001;
+        }
+        .top-bar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--gold-light);
+            font-weight: 500;
+        }
+        .top-bar-item svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+        .top-bar-item a {
+            color: var(--gold-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .top-bar-item a:hover { color: var(--ivory); }
+        .top-bar-badge {
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(253, 252, 250, 0.97);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .nav-logo-text {
+            line-height: 1.2;
+        }
+        .nav-logo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--navy);
+            letter-spacing: -0.01em;
+        }
+        .nav-logo-sub {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .nav-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+        }
+        .nav-link:hover { color: var(--navy); }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+        .nav-link:hover::after { width: 100%; }
+        .nav-cta {
+            background: var(--navy);
+            color: var(--ivory);
+            padding: 0.6rem 1.4rem;
+            border-radius: var(--radius);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            border: 1.5px solid var(--navy);
+        }
+        .nav-cta:hover {
+            background: transparent;
+            color: var(--navy);
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .mobile-menu-btn span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--navy);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-light) 100%);
+            color: var(--ivory);
+            padding: 4rem 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(201, 169, 110, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            min-height: 600px;
+        }
+        .hero-badge-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .hero-badge {
+            background: rgba(201, 169, 110, 0.15);
+            color: var(--gold-light);
+            padding: 0.35rem 0.9rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            border: 1px solid rgba(201, 169, 110, 0.25);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .hero-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+        .hero-title {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--ivory);
+        }
+        .hero-title .bn {
+            font-size: 0.55em;
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--gold-light);
+            font-weight: 500;
+        }
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.75);
+            max-width: 500px;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .hero-subtitle .bn {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.95em;
+            color: rgba(255,255,255,0.6);
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 0.9rem 2rem;
+            border-radius: var(--radius);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 2px solid var(--gold);
+            cursor: pointer;
+        }
+        .btn-gold:hover {
+            background: transparent;
+            color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--ivory);
+            padding: 0.9rem 2rem;
+            border-radius: var(--radius);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1.5px solid rgba(255,255,255,0.3);
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .hero-quick-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .hero-info-item {
+            text-align: center;
+        }
+        .hero-info-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .hero-info-label {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 0.4rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+        .hero-info-label .bn { font-size: 0.85em; }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image-frame {
+            position: relative;
+            width: 90%;
+            max-width: 420px;
+        }
+        .hero-image-main {
+            width: 100%;
+            aspect-ratio: 3/4;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            border: 3px solid rgba(201, 169, 110, 0.2);
+        }
+        .hero-image-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-image-accent {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: var(--ivory);
+            padding: 1.25rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-left: 4px solid var(--gold);
+            min-width: 160px;
+        }
+        .accent-degree {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.6;
+        }
+        .accent-degree span {
+            display: block;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.65rem;
+            margin-top: 0.15rem;
+        }
+        .hero-image-ring {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 100px;
+            height: 100px;
+            border: 3px solid var(--gold);
+            border-radius: 50%;
+            opacity: 0.25;
+        }
+        .hero-clinic-tag {
+            position: absolute;
+            bottom: 60px;
+            right: -10px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 0.6rem 1rem;
+            border-radius: var(--radius);
+            font-size: 0.75rem;
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+            z-index: 3;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--cream);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-items: center;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .trust-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--ivory);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        .trust-text {
+            line-height: 1.3;
+        }
+        .trust-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+        .trust-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.15rem;
+        }
+
+        /* Section Base */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        .section-cream { background: var(--cream); }
+        .section-navy { background: var(--navy); color: var(--ivory); }
+        .section-navy h2, .section-navy h3 { color: var(--ivory); }
+        .section-navy p { color: rgba(255,255,255,0.75); }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+        .section-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .section-eyebrow::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--gold);
+        }
+        .section-title {
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Doctor Profile */
+        .doctor-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .doctor-visual {
+            position: relative;
+            sticky: top: 100px;
+        }
+        .doctor-image-wrap {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .doctor-image-wrap img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            display: block;
+        }
+        .doctor-creds-float {
+            position: absolute;
+            bottom: -16px;
+            right: -16px;
+            background: var(--ivory);
+            padding: 1.25rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-top: 4px solid var(--gold);
+            min-width: 200px;
+        }
+        .doctor-creds-float h4 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        .cred-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+        .cred-row:last-child { border-bottom: none; }
+        .cred-row svg {
+            width: 16px;
+            height: 16px;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+        .doctor-content h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .doctor-title-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .doctor-title-badge {
+            background: var(--navy);
+            color: var(--gold);
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .doctor-title-badge.teal {
+            background: var(--teal);
+            color: var(--ivory);
+        }
+        .doctor-quote {
+            background: var(--cream);
+            border-left: 4px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin-bottom: 1.5rem;
+        }
+        .doctor-quote p {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            line-height: 1.7;
+        }
+        .doctor-quote .bn {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+        }
+        .doctor-text {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: var(--text-body);
+            margin-bottom: 1rem;
+        }
+        .doctor-text .bn { color: var(--text-muted); font-size: 0.9em; }
+        .doctor-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+        .dstat {
+            text-align: center;
+            padding: 1rem;
+            background: var(--ivory);
+            border-radius: var(--radius);
+            border: 1px solid var(--border-light);
+        }
+        .dstat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+        .dstat-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .dstat-label .bn { font-size: 0.85em; text-transform: none; }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--cream);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            border: 1px solid var(--border);
+        }
+        .service-card:hover .service-icon {
+            background: var(--navy);
+            border-color: var(--navy);
+        }
+        .service-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .service-title .bn {
+            display: block;
+            font-size: 0.8em;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 0.2rem;
+        }
+        .service-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+        .service-desc .bn { font-size: 0.9em; }
+        .service-link {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: var(--transition);
+        }
+        .service-link:hover { color: var(--gold); }
+        .service-link::after {
+            content: '→';
+            transition: var(--transition);
+        }
+        .service-card:hover .service-link::after { transform: translateX(4px); }
+
+        /* Clinic Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 250px 250px;
+            gap: 1rem;
+        }
+        .gallery-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item.main { grid-row: span 2; }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(11, 30, 63, 0.8));
+            color: var(--ivory);
+        }
+        .gallery-overlay h4 {
+            font-size: 1rem;
+            color: var(--ivory);
+            margin-bottom: 0.25rem;
+        }
+        .gallery-overlay p {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Testimonials */
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .testi-card {
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            transition: var(--transition);
+        }
+        .testi-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+        .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 0.75rem; letter-spacing: 0.1em; }
+        .testi-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--navy);
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+        .testi-text .bn {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        .testi-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .testi-avatar {
+            width: 42px;
+            height: 42px;
+            background: var(--navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .testi-name { font-size: 0.85rem; font-weight: 700; color: var(--navy); }
+        .testi-detail { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.1rem; }
+        .testi-detail .bn { font-size: 0.85em; }
+
+        /* FAQ */
+        .faq-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+        .faq-item {
+            background: var(--ivory);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-item:hover { border-color: var(--gold); }
+        .faq-item.active { border-color: var(--gold); box-shadow: var(--shadow-md); }
+        .faq-q {
+            width: 100%;
+            padding: 1.1rem 1.25rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--navy);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+            font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+            gap: 1rem;
+        }
+        .faq-q:hover { color: var(--gold); }
+        .faq-q .bn { font-weight: 500; font-size: 0.95em; }
+        .faq-icon {
+            width: 28px;
+            height: 28px;
+            border: 1.5px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: var(--transition);
+            flex-shrink: 0;
+            color: var(--text-muted);
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-item.active .faq-a {
+            max-height: 400px;
+            padding: 0 1.25rem 1.25rem;
+        }
+        .faq-a p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+        .faq-a p .bn { font-size: 0.9em; }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 3rem;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+        .contact-block {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            transition: var(--transition);
+        }
+        .contact-block:hover {
+            border-color: rgba(201, 169, 110, 0.3);
+            background: rgba(255,255,255,0.06);
+        }
+        .contact-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .contact-value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--ivory);
+            line-height: 1.6;
+        }
+        .contact-value a {
+            color: var(--ivory);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+        .contact-value a:hover { color: var(--gold); }
+        .contact-value .bn {
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.7);
+            display: block;
+            margin-top: 0.25rem;
+        }
+        .contact-sub {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.4rem;
+        }
+        .contact-sub .bn { font-size: 0.85em; }
+        .payment-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .payment-badge {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 0.4rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gold-light);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-map-wrap {
+            background: var(--navy-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            height: 100%;
+            min-height: 450px;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .contact-map-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(0.5) contrast(1.1);
+            min-height: 450px;
+        }
+        .map-card {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            background: var(--ivory);
+            padding: 1rem 1.25rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-left: 4px solid var(--gold);
+        }
+        .map-card h4 {
+            font-size: 0.9rem;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+        .map-card p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .map-card p .bn { font-size: 0.9em; }
+        .appointment-pulse {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(201, 169, 110, 0.15);
+            color: var(--gold);
+            padding: 0.6rem 1rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-top: 1rem;
+            border: 1px solid rgba(201, 169, 110, 0.25);
+        }
+        .appointment-pulse::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        /* Sticky Bottom Bar (Mobile) */
+        .sticky-bottom {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: var(--ivory);
+            border-top: 1px solid var(--border);
+            padding: 0.75rem 1rem;
+            box-shadow: 0 -4px 20px rgba(11, 30, 63, 0.1);
+        }
+        .sticky-bottom-inner {
+            display: flex;
+            gap: 0.75rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .sticky-btn {
+            flex: 1;
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            transition: var(--transition);
+        }
+        .sticky-btn-call {
+            background: var(--navy);
+            color: var(--ivory);
+        }
+        .sticky-btn-wa {
+            background: #25D366;
+            color: white;
+        }
+        .sticky-btn:hover { transform: translateY(-2px); }
+
+        /* WhatsApp Float */
+        .wa-float {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 998;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: var(--transition);
+            animation: wa-bounce 2s infinite;
+        }
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+        }
+        @keyframes wa-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy-deep);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 3rem 0 1.5rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: var(--ivory);
+            margin-bottom: 0.75rem;
+        }
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .footer-desc .bn { font-size: 0.9em; }
+        .footer-col h4 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.6rem; }
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .footer-links a:hover { color: var(--gold); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        .footer-copy .bn { font-size: 0.85em; }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(11, 30, 63, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+        }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-box {
+            background: var(--ivory);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .modal-overlay.active .modal-box { transform: scale(1); }
+        .modal-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--cream);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+        .modal-title { font-size: 1.35rem; margin-bottom: 0.5rem; }
+        .modal-text {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .modal-text .bn { font-size: 0.9em; }
+        .modal-close {
+            background: var(--navy);
+            color: var(--ivory);
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+        .modal-close:hover { background: var(--navy-light); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-subtitle { margin: 0 auto 2rem; }
+            .hero-ctas { justify-content: center; }
+            .hero-quick-info { max-width: 500px; margin: 0 auto; }
+            .hero-visual { order: -1; padding: 2rem 0; }
+            .hero-image-frame { max-width: 320px; }
+            .doctor-grid,
+            .faq-wrap,
+            .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-container { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px; }
+            .gallery-item.main { grid-row: span 1; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .top-bar-left { justify-content: center; width: 100%; }
+            .top-bar-container { justify-content: center; }
+            .hero { padding-top: 2rem; }
+            .hero-title { font-size: 1.75rem; }
+            .hero-image-accent { left: 10px; bottom: -10px; padding: 0.75rem; min-width: 130px; }
+            .hero-clinic-tag { right: 0; bottom: 40px; font-size: 0.65rem; padding: 0.4rem 0.75rem; }
+            .hero-quick-info { grid-template-columns: 1fr; gap: 1rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .testi-grid { grid-template-columns: 1fr; }
+            .trust-container { grid-template-columns: 1fr; }
+            .doctor-stats { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+            .gallery-item { aspect-ratio: 16/9; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .sticky-bottom { display: block; }
+            body { padding-bottom: 80px; }
+            .wa-float { bottom: 100px; }
+            .section { padding: 3rem 0; }
+            .section-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    <a href="tel:+8801819290354">০১৮১৯-২৯০৩৫৪</a>
+                </div>
+                <div class="top-bar-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>শনি - বৃহস্পতি, বিকাল ৫:৩০ - রাত ৯:০০</span>
+                </div>
+                <div class="top-bar-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    <span>মিরপুর-১০, সেনপাড়া পার্বত</span>
+                </div>
+            </div>
+            <div class="top-bar-badge">DMCH Professor</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="nav-logo-icon">S</div>
+                <div class="nav-logo-text">
+                    <div class="nav-logo-title">Saiful's DENTAL Care</div>
+                    <div class="nav-logo-sub">সাইফুল'স ডেন্টাল কেয়ার</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#doctor" class="nav-link">ডাক্তার সাহেব</a>
+                <a href="#services" class="nav-link">সেবাসমূহ</a>
+                <a href="#gallery" class="nav-link">চেম্বার</a>
+                <a href="#testimonials" class="nav-link">রোগীর অভিজ্ঞতা</a>
+                <a href="#faq" class="nav-link">জিজ্ঞাসা</a>
+                <a href="#contact" class="nav-link">ঠিকানা</a>
+                <a href="tel:+8801819290354" class="nav-cta">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    কল করুন
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="showModal('menu')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge-row reveal">
+                    <div class="hero-badge">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+                        DMCH Professor
+                    </div>
+                    <div class="hero-badge">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+                        BCS Health Cadre
+                    </div>
+                    <div class="hero-badge">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        ১৫+ বছরের অভিজ্ঞতা
+                    </div>
+                </div>
+                <h1 class="hero-title reveal delay-1">
+                    Precision Dentistry.<br>Timeless Care.
+                    <span class="bn">নিখুঁত ডেন্টাল চিকিৎসা। বিশ্বস্ত যত্ন।</span>
+                </h1>
+                <p class="hero-subtitle reveal delay-2">
+                    Professor Dr. Saiful Islam, MS, MPH, BCS, BDS — Dhaka Medical College & Hospital. 
+                    Evening chamber at Mirpur-10 for working professionals and families.
+                    <span class="bn">প্রফেসর ডা. সাইফুল ইসলাম — ঢাকা মেডিকেল কলেজ হাসপাতাল। মিরপুর-১০-এ বিকালের চেম্বার।</span>
+                </p>
+                <div class="hero-ctas reveal delay-3">
+                    <a href="tel:+8801819290354" class="btn-gold">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                        অ্যাপয়েন্টমেন্ট নিন — ০১৮১৯-২৯০৩৫৪
+                    </a>
+                    <a href="https://wa.me/8801819290354" target="_blank" class="btn-outline">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.249-.463-2.38-1.473-.88-.788-1.473-1.764-1.647-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp করুন
+                    </a>
+                </div>
+                <div class="hero-quick-info reveal delay-4">
+                    <div class="hero-info-item">
+                        <div class="hero-info-number">15+</div>
+                        <div class="hero-info-label">Years Experience<br><span class="bn">বছরের অভিজ্ঞতা</span></div>
+                    </div>
+                    <div class="hero-info-item">
+                        <div class="hero-info-number">4</div>
+                        <div class="hero-info-label">Advanced Degrees<br><span class="bn">উচ্চ ডিগ্রি</span></div>
+                    </div>
+                    <div class="hero-info-item">
+                        <div class="hero-info-number">5:30<span style="font-size:0.6em">PM</span></div>
+                        <div class="hero-info-label">Evening Start<br><span class="bn">বিকাল শুরু</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-frame reveal delay-2">
+                    <div class="hero-image-main">
+                        <img src="Downloads/Gemini_Generated_Image_qeb6hxqeb6hxqeb6.png" alt="Professor Dr. Saiful Islam - Dental Surgeon at Dhaka Medical College Hospital" onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=Downloads/Gemini_Generated_Image_qeb6hxqeb6hxqeb6.png800&fit=crop&q=80'">
+                    </div>
+                    <div class="hero-image-accent">
+                        <div class="accent-degree">MS — Dental Science<span>মাস্টার অফ সার্জারি</span></div>
+                        <div class="accent-degree">MPH — Public Health<span>মাস্টার অফ পাবলিক হেলথ</span></div>
+                        <div class="accent-degree">BCS — Health Cadre<span>বিসিএস স্বাস্থ্য ক্যাডার</span></div>
+                        <div class="accent-degree">BDS — Dental Surgery<span>ব্যাচেলর অফ ডেন্টাল সার্জারি</span></div>
+                    </div>
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-clinic-tag">By Appointment Only</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <div class="trust-item reveal">
+                <div class="trust-icon">🏥</div>
+                <div class="trust-text">
+                    <div class="trust-title">DMCH Professor</div>
+                    <div class="trust-sub">ঢাকা মেডিকেল কলেজ হাসপাতাল</div>
+                </div>
+            </div>
+            <div class="trust-item reveal delay-1">
+                <div class="trust-icon">🦷</div>
+                <div class="trust-text">
+                    <div class="trust-title">Digital Radiography</div>
+                    <div class="trust-sub">আধুনিক ডিজিটাল এক্স-রে</div>
+                </div>
+            </div>
+            <div class="trust-item reveal delay-2">
+                <div class="trust-icon">👨‍👩‍👧</div>
+                <div class="trust-text">
+                    <div class="trust-title">Family Dentistry</div>
+                    <div class="trust-sub">পরিবারের সবার জন্য</div>
+                </div>
+            </div>
+            <div class="trust-item reveal delay-3">
+                <div class="trust-icon">🕐</div>
+                <div class="trust-text">
+                    <div class="trust-title">Evening Chamber</div>
+                    <div class="trust-sub">বিকাল ৫:৩০ - রাত ৯:০০</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile -->
+    <section class="section" id="doctor">
+        <div class="container">
+            <div class="doctor-grid">
+                <div class="doctor-visual reveal">
+                    <div class="doctor-image-wrap">
+                        <img src="https://doctorappointmentbd.com/wp-content/uploads/2024/01/dr-saiful-islam-dentist-dhaka.jpg" alt="Dr. Saiful Islam - Professor of Dental Surgery at Dhaka Medical College Hospital" onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=750&fit=crop&q=80'">
+                    </div>
+                    <div class="doctor-creds-float">
+                        <h4>ACADEMIC CREDENTIALS</h4>
+                        <div class="cred-row">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.39 5.844 50.57 50.57 0 00-2.658.813m-15.482 0A50.55 50.55 0 0112 13.489a50.55 50.55 0 0112-1.82"/></svg>
+                            MS — Dental Science
+                        </div>
+                        <div class="cred-row">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.39 5.844 50.57 50.57 0 00-2.658.813m-15.482 0A50.55 50.55 0 0112 13.489a50.55 50.55 0 0112-1.82"/></svg>
+                            MPH — Public Health
+                        </div>
+                        <div class="cred-row">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.39 5.844 50.57 50.57 0 00-2.658.813m-15.482 0A50.55 50.55 0 0112 13.489a50.55 50.55 0 0112-1.82"/></svg>
+                            BCS — Health Cadre
+                        </div>
+                        <div class="cred-row">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.39 5.844 50.57 50.57 0 00-2.658.813m-15.482 0A50.55 50.55 0 0112 13.489a50.55 50.55 0 0112-1.82"/></svg>
+                            BDS — Dental Surgery
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-content">
+                    <div class="section-eyebrow reveal">Clinical Authority</div>
+                    <h2 class="reveal delay-1">Professor Dr. Saiful Islam</h2>
+                    <div class="doctor-title-row reveal delay-1">
+                        <span class="doctor-title-badge">Professor, DMCH</span>
+                        <span class="doctor-title-badge teal">Dental Surgeon</span>
+                        <span class="doctor-title-badge" style="background:var(--gold);color:var(--navy-deep)">BCS Health</span>
+                    </div>
+                    <div class="doctor-quote reveal delay-2">
+                        <p>"I believe in conservative, high-quality dentistry. Every treatment plan is built on diagnostic precision and a long-term vision for your oral health—not quick fixes."</p>
+                        <p class="bn" style="margin-top:0.5rem;color:var(--text-muted)">"আমি রোগীর প্রকৃত দাঁত যতটা সম্ভব সংরক্ষণ করতে বিশ্বাস করি। প্রতিটি চিকিৎসা পরিকল্পনা নির্ভুল ডায়াগনোসিসের উপর ভিত্তি করে তৈরি করা হয়।"</p>
+                    </div>
+                    <p class="doctor-text reveal delay-2">
+                        Dr. Saiful Islam serves as a Professor at Dhaka Medical College & Hospital, bringing institutional rigor to his private chamber at Saiful's DENTAL Care in Mirpur-10. His dual background in clinical surgery and public health enables a systematic, evidence-based approach to both routine and complex cases.
+                        <span class="bn">ডা. সাইফুল ইসলাম ঢাকা মেডিকেল কলেজ হাসপাতালের প্রফেসর হিসেবে কর্মরত। ক্লিনিক্যাল সার্জারি এবং পাবলিক হেলথে তার দ্বৈত পটভূমি রুটিন এবং জটিল উভয় ধরনের কেসে নির্ভুল, প্রমাণ-ভিত্তিক পদ্ধতি নিশ্চিত করে।</span>
+                    </p>
+                    <p class="doctor-text reveal delay-3">
+                        His practice integrates digital radiography and modern treatment protocols. From preventive care for children to full-mouth rehabilitation with implants and crowns, every patient receives the same meticulous attention that has earned him trust across Dhaka.
+                        <span class="bn">তার চেম্বারে ডিজিটাল রেডিওগ্রাফি এবং আধুনিক চিকিৎসা প্রোটোকল রয়েছে। শিশুদের প্রিভেন্টিভ কেয়ার থেকে শুরু করে ইমপ্ল্যান্ট ও ক্রাউন দিয়ে ফুল-মাউথ রিহ্যাবিলিটেশন — প্রতিটি রোগী একই মনোযোগ পান।</span>
+                    </p>
+                    <div class="doctor-stats reveal delay-3">
+                        <div class="dstat">
+                            <div class="dstat-number">15+</div>
+                            <div class="dstat-label">Years<br><span class="bn">বছর অভিজ্ঞতা</span></div>
+                        </div>
+                        <div class="dstat">
+                            <div class="dstat-number">4</div>
+                            <div class="dstat-label">Degrees<br><span class="bn">উচ্চ ডিগ্রি</span></div>
+                        </div>
+                        <div class="dstat">
+                            <div class="dstat-number">1</div>
+                            <div class="dstat-label">Location<br><span class="bn">মিরপুর-১০</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-cream" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">Clinical Services</div>
+                <h2 class="section-title">Premium Dental Services<br><span class="bn" style="font-size:0.6em;color:var(--text-muted);font-weight:500">প্রিমিয়াম ডেন্টাল সেবাসমূহ</span></h2>
+                <p class="section-subtitle">
+                    Advanced treatments for complex cases, delivered with the precision and care you expect from a DMCH professor.
+                    <span class="bn" style="display:block;margin-top:0.5rem">জটিল কেসের জন্য উন্নত চিকিৎসা — DMCH প্রফেসরের নির্ভুলতা ও যত্নের সাথে।</span>
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">🦷</div>
+                    <h3 class="service-title">
+                        Advanced Prosthodontics & Implants
+                        <span class="bn">আধুনিক প্রোসথোডন্টিক্স ও ইমপ্ল্যান্ট</span>
+                    </h3>
+                    <p class="service-desc">
+                        Implant-supported crowns, bridges, and full-arch reconstructions. Precision-fitted prosthetics for permanent, aesthetic solutions to tooth loss.
+                        <span class="bn">ইমপ্ল্যান্ট-সাপোর্টেড ক্রাউন, ব্রিজ এবং ফুল-আর্ক রিকনস্ট্রাকশন। দাঁত হারানোর স্থায়ী ও সুন্দর সমাধান।</span>
+                    </p>
+                    <a href="#" class="service-link" onclick="showModal('service')">Learn more — বিস্তারিত</a>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">✨</div>
+                    <h3 class="service-title">
+                        Restorative & Cosmetic Artistry
+                        <span class="bn">রেস্টোরেটিভ ও কসমেটিক আর্ট</span>
+                    </h3>
+                    <p class="service-desc">
+                        Porcelain veneers, ceramic crowns, teeth whitening, and smile design. Conservative protocols that preserve natural tooth structure.
+                        <span class="bn">পোর্সেলিন ভেনিয়ার, সিরামিক ক্রাউন, টিথ হোয়াইটেনিং এবং স্মাইল ডিজাইন। প্রাকৃতিক দাঁত সংরক্ষণমূলক পদ্ধতি।</span>
+                    </p>
+                    <a href="#" class="service-link" onclick="showModal('service')">Learn more — বিস্তারিত</a>
+                </div>
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-title">
+                        Comprehensive Preventative Care
+                        <span class="bn">ব্যাপক প্রিভেন্টিভ কেয়ার</span>
+                    </h3>
+                    <p class="service-desc">
+                        Evidence-based hygiene, periodontal maintenance, root canal treatments, and early intervention for the whole family.
+                        <span class="bn">প্রমাণ-ভিত্তিক হাইজিন, পেরিওডন্টাল মেইনটেন্যান্স, রুট ক্যানাল এবং পুরো পরিবারের জন্য প্রারম্ভিক চিকিৎসা।</span>
+                    </p>
+                    <a href="#" class="service-link" onclick="showModal('service')">Learn more — বিস্তারিত</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">Chamber Environment</div>
+                <h2 class="section-title">Our Chamber at Mirpur-10<br><span class="bn" style="font-size:0.6em;color:var(--text-muted);font-weight:500">মিরপুর-১০-এ আমাদের চেম্বার</span></h2>
+                <p class="section-subtitle">
+                    Modern equipment, sterile environment, and comfortable seating for patients and families.
+                    <span class="bn" style="display:block;margin-top:0.5rem">আধুনিক যন্ত্রপাতি, জীবাণুমুক্ত পরিবেশ এবং রোগী ও পরিবারের জন্য আরামদায়ক বসার ব্যবস্থা।</span>
+                </p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item main">
+                    <img src="https://kimi-web-img.moonshot.cn/img/deftdecor.com/f83bb2f6e4d3497787e7b526db0bd67622300911.jpg" alt="Premium dental clinic interior with modern equipment and warm lighting" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Treatment Room</h4>
+                        <p>Modern dental unit with digital X-ray capability</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://kimi-web-img.moonshot.cn/img/techdentalcare.com/0c03fba58650ff767e81b37ee0e908d532560e17.webp" alt="Dental equipment and sterilization area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Equipment</h4>
+                        <p>Digital radiography & sterilization</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://kimi-web-img.moonshot.cn/img/nextgeninteriors.com.bd.luxury/9a226472e54c3334ae8cf9c1fb646470a1b91079.jpg" alt="Clean modern reception and waiting area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Reception</h4>
+                        <p>Comfortable waiting for families</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="grid-column:span 2">
+                    <img src="https://kimi-web-img.moonshot.cn/img/bdinterior.com/20fea16ce1d9b719140c2d060b5025c08a8760ba.jpg" alt="Consultation area with modern dental clinic design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Consultation Area</h4>
+                        <p>Private discussion space for treatment planning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-cream" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">Patient Stories</div>
+                <h2 class="section-title">What Our Patients Say<br><span class="bn" style="font-size:0.6em;color:var(--text-muted);font-weight:500">আমাদের রোগীরা যা বলেন</span></h2>
+                <p class="section-subtitle">
+                    Long-term relationships built on trust, precision, and genuine care for every patient.
+                    <span class="bn" style="display:block;margin-top:0.5rem">বিশ্বাস, নির্ভুলতা এবং প্রকৃত যত্নের উপর ভিত্তি করে গড়ে ওঠা দীর্ঘমেয়াদী সম্পর্ক।</span>
+                </p>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card reveal delay-1">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">
+                        "Dr. Islam reconstructed my entire upper arch with implants and crowns. The precision was remarkable—I finally smile without hesitation."
+                        <span class="bn">"ডা. সাইফুল ইসলাম আমার পুরো উপরের চোয়াল ইমপ্ল্যান্ট ও ক্রাউন দিয়ে তৈরি করে দিয়েছেন। নিখুঁত কাজ — এখন আমি হেসে কথা বলতে পারি।"</span>
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RA</div>
+                        <div>
+                            <div class="testi-name">R. Ahmed</div>
+                            <div class="testi-detail">Full Arch Rehabilitation · <span class="bn">৩ বছরের রোগী</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal delay-2">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">
+                        "The entire family comes here. What sets this chamber apart is the unhurried consultation—he explains every option before proceeding."
+                        <span class="bn">"আমাদের পুরো পরিবার এখানে আসে। এই চেম্বারকে আলাদা করে তোলে ডাক্তার সাহেবের অতিরিক্ত সময় নিয়ে কথা বলা — প্রতিটি অপশন বুঝিয়ে বলেন।"</span>
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">FK</div>
+                        <div>
+                            <div class="testi-name">F. Karim</div>
+                            <div class="testi-detail">Family Care · <span class="bn">৫ বছরের রোগী</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal delay-3">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">
+                        "After a traumatic dental injury, Dr. Islam managed the emergency and follow-up restoration with absolute clinical precision."
+                        <span class="bn">"একটি দুর্ঘটনায় দাঁত ভেঙে গেলে ডা. সাইফুল ইসলাম জরুরি চিকিৎসা এবং পরবর্তী রেস্টোরেশন অত্যন্ত নিখুঁতভাবে করেছেন।"</span>
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">SH</div>
+                        <div>
+                            <div class="testi-name">S. Hossain</div>
+                            <div class="testi-detail">Trauma & Restoration · <span class="bn">১ বছরের রোগী</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal delay-4">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">
+                        "I sought a second opinion for a complex root canal. His conservative approach saved a tooth others wanted to extract."
+                        <span class="bn">"একটি জটিল রুট ক্যানালের জন্য সেকেন্ড অপিনিয়ন নিতে এসেছিলাম। ডাক্তার সাহেবের সংরক্ষণমূলক পদ্ধতিতে দাঁত বাঁচিয়ে দিয়েছেন।"</span>
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">NA</div>
+                        <div>
+                            <div class="testi-name">N. Alam</div>
+                            <div class="testi-detail">Endodontic Preservation · <span class="bn">২ বছরের রোগী</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="faq-wrap">
+                <div class="reveal">
+                    <div class="section-eyebrow">Common Questions</div>
+                    <h2 class="section-title">Before You Call<br><span class="bn" style="font-size:0.6em;color:var(--text-muted);font-weight:500">ফোন দেওয়ার আগে</span></h2>
+                    <p class="section-subtitle">
+                        Answers to the most common questions to save your time and our staff's time.
+                        <span class="bn" style="display:block;margin-top:0.5rem">সবচেয়ে সাধারণ প্রশ্নের উত্তর — আপনার এবং আমাদের সময় বাঁচাতে।</span>
+                    </p>
+                    <div style="margin-top:2rem;padding:1.5rem;background:var(--cream);border-radius:var(--radius);border-left:4px solid var(--gold)">
+                        <p style="font-size:0.9rem;color:var(--navy);font-weight:600;margin-bottom:0.5rem">Still have questions?</p>
+                        <p style="font-size:0.85rem;color:var(--text-muted)">Call or WhatsApp us directly. Our staff speaks Bengali and English.</p>
+                        <a href="tel:+8801819290354" class="btn-gold" style="margin-top:1rem;padding:0.75rem 1.5rem;font-size:0.85rem">📞 ০১৮১৯-২৯০৩৫৪</a>
+                    </div>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item reveal delay-1">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>চেম্বারের ঠিকানা ও সময়সূচি কী? <span class="bn" style="color:var(--text-muted);font-weight:400">(Address & Hours)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                <strong>Address:</strong> House 24-25, Road 6, Senpara Parbota, Mirpur-10, Dhaka. Near Mirpur-10 Metro Rail Station and Senpara Bus Stand.<br><br>
+                                <strong>Hours:</strong> Saturday – Thursday, 5:30 PM – 9:00 PM. <strong>Closed Friday.</strong><br><br>
+                                <span class="bn"><strong>ঠিকানা:</strong> হাউস ২৪-২৫, রোড ৬, সেনপাড়া পার্বত, মিরপুর-১০, ঢাকা। মিরপুর-১০ মেট্রো রেল স্টেশন ও সেনপাড়া বাসস্ট্যান্ডের কাছে।<br><br><strong>সময়:</strong> শনিবার - বৃহস্পতিবার, বিকাল ৫:৩০ - রাত ৯:০০। <strong>শুক্রবার বন্ধ।</strong></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-1">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>অ্যাপয়েন্টমেন্ট কীভাবে নেব? <span class="bn" style="color:var(--text-muted);font-weight:400">(How to Book)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Call <strong>+880 1819-290354</strong> or WhatsApp the same number. Please book at least 1 day in advance. Walk-ins are not accepted — all visits are by appointment to ensure quality time with the doctor.<br><br>
+                                <span class="bn"><strong>+৮৮০ ১৮১৯-২৯০৩৫৪</strong> নম্বরে কল করুন বা WhatsApp করুন। অনুগ্রহ করে কমপক্ষে ১ দিন আগে বুকিং করুন। ওয়াক-ইন গ্রহণ করা হয় না — সব অ্যাপয়েন্টমেন্ট নির্ভুল সময়ের জন্য।</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-2">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>প্রথম ভিজিটে কী হবে? <span class="bn" style="color:var(--text-muted);font-weight:400">(First Visit)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Your first visit is a comprehensive diagnostic session. Dr. Islam will conduct a full oral examination, review your medical history, perform digital X-rays if needed, and discuss a long-term treatment plan. Plan for 45–60 minutes. Bring any previous dental records or X-rays.<br><br>
+                                <span class="bn">প্রথম ভিজিটে একটি বিস্তারিত ডায়াগনোস্টিক সেশন হবে। ডা. ইসলাম পূর্ণ মুখ পরীক্ষা, মেডিকেল হিস্টরি রিভিউ, প্রয়োজনে ডিজিটাল এক্স-রে এবং দীর্ঘমেয়াদী চিকিৎসা পরিকল্পনা নিয়ে আলোচনা করবেন। সময় লাগবে ৪৫-৬০ মিনিট। আগের ডেন্টাল রেকর্ড বা এক্স-রে থাকলে নিয়ে আসুন।</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-2">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>বিল ও পেমেন্ট পদ্ধতি কী? <span class="bn" style="color:var(--text-muted);font-weight:400">(Billing & Payment)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Transparent pricing with upfront estimates. Payment is due at the time of service. We accept <strong>Cash, bKash, Nagad,</strong> and Bank Transfer. Detailed invoices are provided for insurance reimbursement claims. For multi-stage treatments (implants, full-mouth rehab), structured payment plans are available.<br><br>
+                                <span class="bn">স্বচ্ছ মূল্যায়ন — চিকিৎসার আগেই খরচা জানিয়ে দেওয়া হয়। <strong>ক্যাশ, বিকাশ, নগদ</strong> এবং ব্যাঙ্ক ট্রান্সফার গ্রহণ করা হয়। ইনস্যুরেন্স রিম্বার্সমেন্টের জন্য বিস্তারিত ইনভয়েস দেওয়া হয়। মাল্টি-স্টেজ চিকিৎসার জন্য কিস্তিতে পরিশোধের সুবিধা আছে।</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-3">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>জরুরি চিকিৎসা পাব কীভাবে? <span class="bn" style="color:var(--text-muted);font-weight:400">(Emergency Care)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                For dental emergencies (trauma, severe pain, abscess), call <strong>+880 1819-290354</strong> immediately. We maintain emergency slots within operating hours. For after-hours emergencies, call and follow the emergency triage prompt. Life-threatening situations should go to DMCH Emergency directly.<br><br>
+                                <span class="bn">দাঁতের জরুরি সমস্যার জন্য (আঘাত, তীব্র ব্যথা, ফোড়া) <strong>+৮৮০ ১৮১৯-২৯০৩৫৪</strong> নম্বরে তৎক্ষণাৎ কল করুন। চেম্বার সময়ের মধ্যে জরুরি স্লট রাখা হয়। চেম্বার সময়ের বাইরে জরুরি হলে DMCH জরুরি বিভাগে যান।</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-3">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>অ্যাপয়েন্টমেন্ট বাতিল করতে চাই? <span class="bn" style="color:var(--text-muted);font-weight:400">(Cancellation)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Please provide at least <strong>24 hours' notice</strong> for cancellations or rescheduling. Late cancellations or no-shows may incur a fee and forfeit priority booking status. Early communication allows us to accommodate other patients on our waitlist.<br><br>
+                                <span class="bn">অনুগ্রহ করে অ্যাপয়েন্টমেন্ট বাতিল বা পুনঃনির্ধারণের জন্য কমপক্ষে <strong>২৪ ঘণ্টা আগে</strong> জানান। দেরিতে বাতিল বা না আসলে ফি দিতে হতে পারে এবং প্রায়োরিটি বুকিং স্ট্যাটাস হারাতে পারেন।</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal delay-4">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            <span>পার্কিং ও যাতায়াত ব্যবস্থা? <span class="bn" style="color:var(--text-muted);font-weight:400">(Parking & Transport)</span></span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Limited on-site parking is available at House 24-25. Additional street parking along Road 6 during evening hours. Easily accessible via <strong>Mirpur-10 Metro Rail Station</strong> (5-minute walk) and Senpara Bus Stand. CNG and rickshaw drop-off directly at the chamber gate.<br><br>
+                                <span class="bn">হাউস ২৪-২৫-এ সীমিত পার্কিং আছে। রোড ৬-এ বিকালে অতিরিক্ত স্ট্রিট পার্কিং পাওয়া যায়। <strong>মিরপুর-১০ মেট্রো রেল স্টেশন</strong> থেকে ৫ মিনিট হাঁটা দূরত্ব। সেনপাড়া বাসস্ট্যান্ড, সিএনজি ও রিকশা সরাসরি চেম্বার গেটে নামতে পারে।</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-navy" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">Contact & Location</div>
+                <h2 class="section-title">Visit Our Chamber<br><span class="bn" style="font-size:0.6em;color:rgba(255,255,255,0.6);font-weight:500">আমাদের চেম্বারে আসুন</span></h2>
+                <p class="section-subtitle">
+                    Single location, precise care. By appointment only.
+                    <span class="bn" style="display:block;margin-top:0.5rem;color:rgba(255,255,255,0.5)">একটি চেম্বার, নির্ভুল যত্ন। শুধুমাত্র অ্যাপয়েন্টমেন্টে।</span>
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-block reveal delay-1">
+                        <div class="contact-label">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                            Chamber Address / চেম্বারের ঠিকানা
+                        </div>
+                        <div class="contact-value">
+                            Saiful's DENTAL Care<br>
+                            House 24-25, Road 6<br>
+                            Senpara Parbota, Mirpur-10<br>
+                            Dhaka, Bangladesh
+                            <span class="bn">সাইফুল'স ডেন্টাল কেয়ার<br>হাউস ২৪-২৫, রোড ৬<br>সেনপাড়া পার্বত, মিরপুর-১০<br>ঢাকা, বাংলাদেশ</span>
+                        </div>
+                        <div class="contact-sub">
+                            Near Mirpur-10 Metro Rail & Senpara Bus Stand
+                            <span class="bn">মিরপুর-১০ মেট্রো রেল ও সেনপাড়া বাসস্ট্যান্ডের কাছে</span>
+                        </div>
+                    </div>
+                    <div class="contact-block reveal delay-2">
+                        <div class="contact-label">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                            Direct Line / সরাসরি ফোন
+                        </div>
+                        <div class="contact-value">
+                            <a href="tel:+8801819290354">+880 1819-290354</a>
+                        </div>
+                        <div class="contact-sub">
+                            Call or WhatsApp for appointments
+                            <span class="bn">অ্যাপয়েন্টমেন্টের জন্য কল বা WhatsApp করুন</span>
+                        </div>
+                    </div>
+                    <div class="contact-block reveal delay-2">
+                        <div class="contact-label">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            Operating Hours / চেম্বার সময়
+                        </div>
+                        <div class="contact-value">
+                            Saturday – Thursday<br>
+                            5:30 PM – 9:00 PM
+                            <span class="bn">শনিবার – বৃহস্পতিবার<br>বিকাল ৫:৩০ – রাত ৯:০০</span>
+                        </div>
+                        <div class="contact-sub">
+                            <strong>Closed Friday / শুক্রবার বন্ধ</strong>
+                        </div>
+                    </div>
+                    <div class="contact-block reveal delay-3">
+                        <div class="contact-label">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.39 5.844 50.57 50.57 0 00-2.658.813m-15.482 0A50.55 50.55 0 0112 13.489a50.55 50.55 0 0112-1.82"/></svg>
+                            Payment Methods / পেমেন্ট পদ্ধতি
+                        </div>
+                        <div class="payment-row">
+                            <span class="payment-badge">💵 Cash</span>
+                            <span class="payment-badge">📱 bKash</span>
+                            <span class="payment-badge">📱 Nagad</span>
+                            <span class="payment-badge">🏦 Bank</span>
+                        </div>
+                        <div class="contact-sub" style="margin-top:0.5rem">
+                            Payment due at time of service. Installments available for major treatments.
+                            <span class="bn">চিকিৎসার সময়েই পেমেন্ট। বড় চিকিৎসার জন্য কিস্তি সুবিধা আছে।</span>
+                        </div>
+                    </div>
+                    <div class="appointment-pulse reveal delay-3">
+                        Currently Accepting New Patients — নতুন রোগী গ্রহণ করা হচ্ছে
+                    </div>
+                </div>
+                <div class="contact-map-wrap reveal delay-2">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.017994!2d90.365!3d23.806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1c0c0c0c1%3A0x0!2sMirpur-10%2C+Senpara+Parbota%2C+Dhaka!5e0!3m2!1sen!2sbd!4v1" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-card">
+                        <h4>Saiful's DENTAL Care</h4>
+                        <p>House 24-25, Road 6, Senpara Parbota, Mirpur-10<br><span class="bn">হাউস ২৪-২৫, রোড ৬, সেনপাড়া পার্বত, মিরপুর-১০</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Saiful's DENTAL Care</div>
+                    <p class="footer-desc">
+                        Precision dentistry by Professor Dr. Saiful Islam, MS, MPH, BCS, BDS. Serving patients at Mirpur-10, Dhaka since 2009.
+                        <span class="bn">প্রফেসর ডা. সাইফুল ইসলামের নিখুঁত ডেন্টাল চিকিৎসা। ২০০৯ সাল থেকে মিরপুর-১০, ঢাকায় রোগীদের সেবা দিয়ে আসছেন।</span>
+                    </p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#doctor">Doctor Profile</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Chamber</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">Common Questions</a></li>
+                        <li><a href="#contact">Location & Hours</a></li>
+                        <li><a href="#" onclick="showModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showModal('terms')">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+8801819290354">+880 1819-290354</a></li>
+                        <li><a href="https://wa.me/8801819290354" target="_blank">WhatsApp</a></li>
+                        <li><a href="#contact">Mirpur-10, Dhaka</a></li>
+                        <li><a href="#">DMCH, Dhaka</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    © 2026 Saiful's DENTAL Care. All rights reserved. <span class="bn">সর্বস্বত্ব সংরক্ষিত।</span>
+                </div>
+                <div class="footer-copy">
+                    Designed for Bangladeshi patients. <span class="bn">বাংলাদেশি রোগীদের জন্য ডিজাইন করা।</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom Bar (Mobile) -->
+    <div class="sticky-bottom">
+        <div class="sticky-bottom-inner">
+            <a href="tel:+8801819290354" class="sticky-btn sticky-btn-call">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                কল করুন
+            </a>
+            <a href="https://wa.me/8801819290354" target="_blank" class="sticky-btn sticky-btn-wa">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.249-.463-2.38-1.473-.88-.788-1.473-1.764-1.647-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/8801819290354" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.249-.463-2.38-1.473-.88-.788-1.473-1.764-1.647-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div class="modal-icon" id="modal-icon">✦</div>
+            <h3 class="modal-title" id="modal-title">Coming Soon</h3>
+            <p class="modal-text" id="modal-text">This feature will be available in the production build.</p>
+            <button class="modal-close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll reveal
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => revealObs.observe(el));
+
+        // FAQ
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const active = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('active'));
+            if (!active) item.classList.add('active');
+        }
+
+        // Modal
+        function showModal(type) {
+            const modal = document.getElementById('modal');
+            const icon = document.getElementById('modal-icon');
+            const title = document.getElementById('modal-title');
+            const text = document.getElementById('modal-text');
+
+            if (type === 'consultation') {
+                icon.textContent = '✦'; title.textContent = 'Request Consultation';
+                text.innerHTML = 'Please call <strong>+880 1819-290354</strong> or WhatsApp to schedule your appointment.<br><span class="bn">অ্যাপয়েন্টমেন্টের জন্য <strong>+৮৮০ ১৮১৯-২৯০৩৫৪</strong> নম্বরে কল বা WhatsApp করুন।</span>';
+            } else if (type === 'service') {
+                icon.textContent = '◈'; title.textContent = 'Service Details';
+                text.innerHTML = 'Detailed service pages with pricing and case galleries will be available in the production build.<br><span class="bn">প্রোডাকশন বিল্ডে বিস্তারিত সেবা, মূল্য এবং কেস গ্যালারি থাকবে।</span>';
+            } else if (type === 'menu') {
+                icon.textContent = '☰'; title.textContent = 'Menu';
+                text.innerHTML = 'Full mobile navigation will be implemented in production.<br><span class="bn">প্রোডাকশনে সম্পূর্ণ মোবাইল নেভিগেশন থাকবে।</span>';
+            } else if (type === 'privacy') {
+                icon.textContent = '🔒'; title.textContent = 'Privacy Policy';
+                text.innerHTML = 'Privacy policy page will be added in production.<br><span class="bn">প্রোডাকশনে প্রাইভেসি পলিসি পেজ যোগ করা হবে।</span>';
+            } else if (type === 'terms') {
+                icon.textContent = '📄'; title.textContent = 'Terms of Service';
+                text.innerHTML = 'Terms of service page will be added in production.<br><span class="bn">প্রোডাকশনে টার্মস অফ সার্ভিস পেজ যোগ করা হবে।</span>';
+            } else {
+                icon.textContent = '✦'; title.textContent = 'Coming Soon';
+                text.innerHTML = 'This feature is under development.<br><span class="bn">এই ফিচারটি তৈরি হচ্ছে।</span>';
+            }
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(e) {
+            if (e && e.target !== e.currentTarget) return;
+            document.getElementById('modal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const h = this.getAttribute('href');
+                if (h !== '#') {
+                    e.preventDefault();
+                    const t = document.querySelector(h);
+                    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
